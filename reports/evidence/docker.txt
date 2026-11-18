@@ -1,0 +1,41 @@
+Captured: 2026-11-19T01:19:26+05:30
+
+Command: docker build -t quote-api:1.0 .
+
+DEPRECATED: The legacy builder is deprecated and will be removed in a future release.
+            Install the buildx component to build images with BuildKit:
+            https://docs.docker.com/go/buildx/
+
+Sending build context to Docker daemon  21.18MB
+
+Step 1/6 : FROM eclipse-temurin:17-jre-jammy
+ ---> aa6381384f8d
+Step 2/6 : WORKDIR /app
+ ---> Running in 92dd9a49500b
+ ---> Removed intermediate container 92dd9a49500b
+ ---> a6c4129b72d3
+Step 3/6 : COPY --chown=10001:10001 target/quote-api.jar app.jar
+ ---> ba066a7d9a16
+Step 4/6 : USER 10001:10001
+ ---> Running in 054141fb4b1d
+ ---> Removed intermediate container 054141fb4b1d
+ ---> 2d56167ab363
+Step 5/6 : EXPOSE 8080
+ ---> Running in 1d72910a7a93
+ ---> Removed intermediate container 1d72910a7a93
+ ---> 658d7c90745c
+Step 6/6 : ENTRYPOINT ["java", "-XX:MaxRAMPercentage=75.0", "-jar", "app.jar"]
+ ---> Running in f104e593a191
+ ---> Removed intermediate container f104e593a191
+ ---> 033c279a71f0
+Successfully built 033c279a71f0
+Successfully tagged quote-api:1.0
+
+2026-11-19T01:31:32+05:30
+Command: docker ps --filter name=lishika-quote-api
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS                      NAMES
+7914ea3987a9   quote-api:1.0   "java -XX:MaxRAMPerc…"   17 seconds ago   Up 16 seconds   127.0.0.1:8082->8080/tcp   lishika-quote-api
+GET /health through Docker
+{"status":"UP"}
+GET /quotes through Docker
+[{"id":1,"text":"Start small. Keep improving."},{"id":2,"text":"Build it, test it, then ship it."},{"id":3,"text":"A little progress every day adds up."}]

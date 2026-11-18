@@ -1,0 +1,12 @@
+*   6bb28b3 (HEAD -> feature/report-evidence, origin/main, main) Merge pull request #2 from Lishhhh07/feature/deployment
+|\  
+| * 9bb5f47 (origin/feature/deployment, feature/deployment) Record the deployment steps and assignment requirements
+| * f1767bc Containerize the app and scale it with Kubernetes
+| * d4c9061 Configure the Quote API service with Ansible
+|/  
+*   286da9a Merge pull request #1 from Lishhhh07/feature/quote-pipeline
+|\  
+| * ba48e22 (origin/feature/quote-pipeline, feature/quote-pipeline) Test the app and archive its JAR in Jenkins
+| * 8d5a2aa Add the Quote API and its three endpoint tests
+|/  
+* c7bd2e7 Start the Quote API DevOps project

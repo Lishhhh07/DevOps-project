@@ -1,0 +1,6 @@
+Captured: 2026-11-19T01:22:32+05:30
+
+Command: kubectl --context kind-lishika-quote-demo get nodes -o wide
+
+NAME                               STATUS   ROLES           AGE     VERSION   INTERNAL-IP   EXTERNAL-IP   OS-IMAGE                         KERNEL-VERSION                      CONTAINER-RUNTIME
+lishika-quote-demo-control-plane   Ready    control-plane   2m21s   v1.35.0   172.18.0.2    <none>        Debian GNU/Linux 12 (bookworm)   6.18.58.1-microsoft-standard-WSL2   containerd://2.2.0
