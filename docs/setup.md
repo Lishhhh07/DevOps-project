@@ -129,7 +129,7 @@ These scripts explicitly use the dedicated `kind-lishika-quote-demo` context. Ma
 
 ## 8. Reports and submission
 
-The completed institutional report is `reports/DevOps_Report_Lishika_Meghani.pdf`, with editable LaTeX source in `reports/overleaf/main.tex`. It contains the original cover/certificate format, component list, rubric and blank marks tables, and separate sections for both components. Earlier standalone component write-ups remain under `reports/` as supporting material. Keep the final institutional PDF, source folder and `repo_link.txt` together for submission.
+The completed institutional report is `reports/DevOps_Report_Lishika_Meghani.pdf`, with editable LaTeX source in `reports/overleaf/main.tex`. It contains the original cover/certificate format, component list, rubric and blank marks tables, and separate sections for both components. Keep the final institutional PDF, source folder and `repo_link.txt` together for submission.
 
 The report uses the real evidence in `reports/evidence/`, including the captured Jenkins UI pages. The supplied college template has now been filled in; obtain the required candidate/faculty signatures and leave marks for the evaluator. Add the course coordinator through GitHub **Settings > Collaborators** once their GitHub username is available; never guess the account.
 
