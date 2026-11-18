@@ -1,0 +1,16 @@
+target/
+.tools/
+tmp/
+.idea/
+.vscode/
+*.log
+.env
+*.pem
+*.key
+ansible/inventory.local
+reports/evidence/raw/
+submission/
+reports/overleaf/*.aux
+reports/overleaf/*.out
+reports/overleaf/*.pdf
+reports/overleaf/*.toc
