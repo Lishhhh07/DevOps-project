@@ -1,0 +1,7 @@
+Captured: 2026-11-19T01:19:40+05:30
+
+Command: docker images quote-api:1.0
+
+WARNING: This output is designed for human readability. For machine-readable output, please use --format.
+IMAGE           ID             DISK USAGE   CONTENT SIZE   EXTRA
+quote-api:1.0   033c279a71f0        415MB          113MB        

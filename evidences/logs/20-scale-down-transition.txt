@@ -1,0 +1,14 @@
+Captured: 2026-11-19T01:23:10+05:30
+
+Command: kubectl --context kind-lishika-quote-demo scale deployment/quote-api --replicas=3
+
+deployment.apps/quote-api scaled
+deployment "quote-api" successfully rolled out
+deployment.apps/quote-api condition met
+
+Command: kubectl --context kind-lishika-quote-demo get pods -l app=quote-api
+
+NAME                         READY   STATUS    RESTARTS   AGE
+quote-api-6f67f5df78-drfq4   1/1     Running   0          102s
+quote-api-6f67f5df78-jtzb5   1/1     Running   0          102s
+quote-api-6f67f5df78-x77zq   1/1     Running   0          102s

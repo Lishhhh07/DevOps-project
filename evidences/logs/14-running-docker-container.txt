@@ -1,0 +1,8 @@
+2026-11-19T01:31:32+05:30
+Command: docker ps --filter name=lishika-quote-api
+CONTAINER ID   IMAGE           COMMAND                  CREATED          STATUS          PORTS                      NAMES
+7914ea3987a9   quote-api:1.0   "java -XX:MaxRAMPerc…"   17 seconds ago   Up 16 seconds   127.0.0.1:8082->8080/tcp   lishika-quote-api
+GET /health through Docker
+{"status":"UP"}
+GET /quotes through Docker
+[{"id":1,"text":"Start small. Keep improving."},{"id":2,"text":"Build it, test it, then ship it."},{"id":3,"text":"A little progress every day adds up."}]

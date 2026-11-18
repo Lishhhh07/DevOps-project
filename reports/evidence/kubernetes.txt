@@ -1,0 +1,46 @@
+Captured: 2026-11-19T01:22:34+05:30
+
+Command: kubectl --context kind-lishika-quote-demo get pods -l app=quote-api
+
+NAME                         READY   STATUS    RESTARTS   AGE
+quote-api-6f67f5df78-drfq4   1/1     Running   0          64s
+quote-api-6f67f5df78-jtzb5   1/1     Running   0          64s
+quote-api-6f67f5df78-x77zq   1/1     Running   0          64s
+
+Captured: 2026-11-19T01:22:38+05:30
+
+Command: kubectl --context kind-lishika-quote-demo scale deployment/quote-api --replicas=5
+
+deployment.apps/quote-api scaled
+Waiting for deployment "quote-api" rollout to finish: 3 of 5 updated replicas are available...
+Waiting for deployment "quote-api" rollout to finish: 4 of 5 updated replicas are available...
+deployment "quote-api" successfully rolled out
+
+Command: kubectl --context kind-lishika-quote-demo get pods -l app=quote-api
+
+NAME                         READY   STATUS    RESTARTS   AGE
+quote-api-6f67f5df78-9vcc4   1/1     Running   0          31s
+quote-api-6f67f5df78-drfq4   1/1     Running   0          100s
+quote-api-6f67f5df78-fddd2   1/1     Running   0          31s
+quote-api-6f67f5df78-jtzb5   1/1     Running   0          100s
+quote-api-6f67f5df78-x77zq   1/1     Running   0          100s
+
+2026-11-19T01:31:36+05:30
+Final state after scaling five replicas back to three; the scale command is retained in 20-scale-down-transition.txt.
+NAME        READY   UP-TO-DATE   AVAILABLE   AGE
+quote-api   3/3     3            3           10m
+NAME                         READY   STATUS    RESTARTS   AGE
+quote-api-6f67f5df78-drfq4   1/1     Running   0          10m
+quote-api-6f67f5df78-jtzb5   1/1     Running   0          10m
+quote-api-6f67f5df78-x77zq   1/1     Running   0          10m
+
+2026-11-19T01:31:35+05:30
+Kubernetes Service access on localhost:8083
+GET /health
+{"status":"UP"}
+GET /quotes
+[{"id":1,"text":"Start small. Keep improving."},{"id":2,"text":"Build it, test it, then ship it."},{"id":3,"text":"A little progress every day adds up."}]
+
+startupProbe: {"failureThreshold":30,"httpGet":{"path":"/health","port":"http","scheme":"HTTP"},"periodSeconds":5,"successThreshold":1,"timeoutSeconds":1}
+readinessProbe: {"failureThreshold":3,"httpGet":{"path":"/health","port":"http","scheme":"HTTP"},"periodSeconds":5,"successThreshold":1,"timeoutSeconds":1}
+livenessProbe: {"failureThreshold":3,"httpGet":{"path":"/health","port":"http","scheme":"HTTP"},"periodSeconds":10,"successThreshold":1,"timeoutSeconds":1}

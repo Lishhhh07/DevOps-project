@@ -1,0 +1,7 @@
+  feature/deployment
+  feature/quote-pipeline
+* feature/report-evidence
+  main
+  remotes/origin/feature/deployment
+  remotes/origin/feature/quote-pipeline
+  remotes/origin/main

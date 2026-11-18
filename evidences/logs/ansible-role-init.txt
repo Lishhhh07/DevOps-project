@@ -1,0 +1,1 @@
+- Role quote_api was created successfully

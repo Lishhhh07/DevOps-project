@@ -1,0 +1,8 @@
+2026-11-19T01:31:36+05:30
+Final state after scaling five replicas back to three; the scale command is retained in 20-scale-down-transition.txt.
+NAME        READY   UP-TO-DATE   AVAILABLE   AGE
+quote-api   3/3     3            3           10m
+NAME                         READY   STATUS    RESTARTS   AGE
+quote-api-6f67f5df78-drfq4   1/1     Running   0          10m
+quote-api-6f67f5df78-jtzb5   1/1     Running   0          10m
+quote-api-6f67f5df78-x77zq   1/1     Running   0          10m

@@ -1,0 +1,8 @@
+Captured: 2026-11-19T01:22:34+05:30
+
+Command: kubectl --context kind-lishika-quote-demo get pods -l app=quote-api
+
+NAME                         READY   STATUS    RESTARTS   AGE
+quote-api-6f67f5df78-drfq4   1/1     Running   0          64s
+quote-api-6f67f5df78-jtzb5   1/1     Running   0          64s
+quote-api-6f67f5df78-x77zq   1/1     Running   0          64s

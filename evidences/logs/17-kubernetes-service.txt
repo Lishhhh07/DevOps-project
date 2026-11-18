@@ -1,0 +1,6 @@
+Captured: 2026-11-19T01:22:35+05:30
+
+Command: kubectl --context kind-lishika-quote-demo get svc quote-api
+
+NAME        TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE
+quote-api   ClusterIP   10.96.42.90   <none>        8080/TCP   66s

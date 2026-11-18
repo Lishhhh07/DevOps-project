@@ -1,0 +1,70 @@
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< io.github.lishhhh07:quote-api >--------------------
+[INFO] Building Quote API 1.0.0
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.4.1:clean (default-clean) @ quote-api ---
+[INFO] Deleting C:\Users\soura\OneDrive\Documents\projects\Devops\.tools\lishika-quote-api\target
+[INFO] 
+[INFO] --- resources:3.3.1:resources (default-resources) @ quote-api ---
+[INFO] Copying 1 resource from src\main\resources to target\classes
+[INFO] Copying 0 resource from src\main\resources to target\classes
+[INFO] 
+[INFO] --- compiler:3.14.1:compile (default-compile) @ quote-api ---
+[INFO] Recompiling the module because of changed source code.
+[INFO] Compiling 2 source files with javac [debug parameters release 17] to target\classes
+[INFO] 
+[INFO] --- resources:3.3.1:testResources (default-testResources) @ quote-api ---
+[INFO] skip non existing resourceDirectory C:\Users\soura\OneDrive\Documents\projects\Devops\.tools\lishika-quote-api\src\test\resources
+[INFO] 
+[INFO] --- compiler:3.14.1:testCompile (default-testCompile) @ quote-api ---
+[INFO] Recompiling the module because of changed dependency.
+[INFO] Compiling 1 source file with javac [debug parameters release 17] to target\test-classes
+[INFO] 
+[INFO] --- surefire:3.5.6:test (default-test) @ quote-api ---
+[INFO] Using auto detected provider org.apache.maven.surefire.junitplatform.JUnitPlatformProvider
+[INFO] 
+[INFO] -------------------------------------------------------
+[INFO]  T E S T S
+[INFO] -------------------------------------------------------
+[INFO] Running io.github.lishhhh07.quotes.QuoteControllerTest
+01:27:19.212 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [io.github.lishhhh07.quotes.QuoteControllerTest]: QuoteControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+01:27:19.581 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration io.github.lishhhh07.quotes.QuoteApplication for test class io.github.lishhhh07.quotes.QuoteControllerTest
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::               (v3.5.16)
+
+2026-11-19T01:27:20.823+05:30  INFO 22480 --- [quote-api] [           main] i.g.l.quotes.QuoteControllerTest         : Starting QuoteControllerTest using Java 17.0.20 with PID 22480 (started by soura in C:\Users\soura\OneDrive\Documents\projects\Devops\.tools\lishika-quote-api)
+2026-11-19T01:27:20.827+05:30  INFO 22480 --- [quote-api] [           main] i.g.l.quotes.QuoteControllerTest         : No active profile set, falling back to 1 default profile: "default"
+2026-11-19T01:27:23.550+05:30  INFO 22480 --- [quote-api] [           main] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2026-11-19T01:27:23.552+05:30  INFO 22480 --- [quote-api] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2026-11-19T01:27:23.563+05:30  INFO 22480 --- [quote-api] [           main] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 3 ms
+2026-11-19T01:27:23.630+05:30  INFO 22480 --- [quote-api] [           main] i.g.l.quotes.QuoteControllerTest         : Started QuoteControllerTest in 3.849 seconds (process running for 5.751)
+OpenJDK 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.952 s -- in io.github.lishhhh07.quotes.QuoteControllerTest
+[INFO] 
+[INFO] Results:
+[INFO] 
+[INFO] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0
+[INFO] 
+[INFO] 
+[INFO] --- jar:3.4.2:jar (default-jar) @ quote-api ---
+[INFO] Building jar: C:\Users\soura\OneDrive\Documents\projects\Devops\.tools\lishika-quote-api\target\quote-api.jar
+[INFO] 
+[INFO] --- spring-boot:3.5.16:repackage (repackage) @ quote-api ---
+[INFO] Replacing main artifact C:\Users\soura\OneDrive\Documents\projects\Devops\.tools\lishika-quote-api\target\quote-api.jar with repackaged archive, adding nested dependencies in BOOT-INF/.
+[INFO] The original artifact has been renamed to C:\Users\soura\OneDrive\Documents\projects\Devops\.tools\lishika-quote-api\target\quote-api.jar.original
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  18.984 s
+[INFO] Finished at: 2026-11-19T01:27:28+05:30
+[INFO] ------------------------------------------------------------------------

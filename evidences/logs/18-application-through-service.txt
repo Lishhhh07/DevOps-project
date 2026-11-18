@@ -1,0 +1,6 @@
+2026-11-19T01:31:35+05:30
+Kubernetes Service access on localhost:8083
+GET /health
+{"status":"UP"}
+GET /quotes
+[{"id":1,"text":"Start small. Keep improving."},{"id":2,"text":"Build it, test it, then ship it."},{"id":3,"text":"A little progress every day adds up."}]
