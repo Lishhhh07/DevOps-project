@@ -2,7 +2,7 @@
 
 Lishika Meghani | 1MS24CI065
 
-All evidence was captured from this project on 19 November 2026. GitHub and Jenkins UI captures are used for items 01–05, 07 and 08. Item 07 uses the same genuine build page as item 05 because it shows the archived JAR. Items 06 and 09–21 are labelled renderings of actual recorded outputs; their complete source logs are retained in `logs/`.
+All evidence was captured from this project on 19 November 2026. GitHub and Jenkins UI captures are used for items 01–05, 07 and 08. Item 07 uses the same genuine build page as item 05 because it shows the archived JAR. Items 06 and 09–21 are renderings of actual recorded outputs; their complete source logs are retained in `logs/`.
 
 ![Evidence overview](overview.jpg)
 
@@ -27,3 +27,5 @@ All evidence was captured from this project on 19 November 2026. GitHub and Jenk
 - [19-kubernetes-five-replicas](19-kubernetes-five-replicas.jpg)
 - [20-kubernetes-scaled-down](20-kubernetes-scaled-down.jpg)
 - [21-configmap-settings](21-configmap-settings.jpg)
+
+Figure title, student-name, date and source banners are omitted from the images. The command-output figures are renderings of the stored logs; provenance is recorded in this index.
